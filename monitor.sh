@@ -2,12 +2,12 @@
 
 for i in {1..3}
 do
-    echo "Running Iteration $i"
-    top -b -n 1
+    echo "Running Iteration $i" >> output/consumptions.txt
+    top -b -n 1 >> output/consumptions.txt
     if [ $i != 3 ];
     then
 	{
-	    echo "---------------------------------------------------------"
+	    echo "---------------------------------------------------------" >> output/consumptions.txt
 	}
     fi
     sleep 5
