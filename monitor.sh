@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "$(whoami)" > output/consumptions.txt
-echo "$(whoami)" > output/consumptions.txt
+echo "$(hostname)" > output/consumptions.txt
 for i in {1..3}
 do
     echo "Running Iteration $i" >> output/consumptions.txt
